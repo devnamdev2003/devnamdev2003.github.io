@@ -2019,8 +2019,8 @@ a {
     }
 
     .link:hover {
-      color: #fff;
-      border-radius: 20px;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
     }
 
     .link:hover::before {
