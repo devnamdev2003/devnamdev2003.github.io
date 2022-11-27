@@ -197,18 +197,48 @@
 
   <footer class="container teal center margin-top">
     <p>Find me on social media.</p>
-    <a href="http://web.whatsapp.com/send?phone=+919926040407&text=Hello" target="_blank"> <i
-        class='fa fa-whatsapp green-color' aria-hidden="true" style="font-size:20px;"></i></a>&ensp;
-    <a href="https://www.linkedin.com/in/dev-namdev-275536226/" target="_blank"><i class="fa fa-linkedin"
-        style="font-size:20px;"></i></a>&ensp;
-    <a href="https://github.com/devnamdev2003" target="_blank"><i class="fa fa-github" aria-hidden="true"
-        style="font-size:20px;"></i></a>&ensp;
-    <a href="https://www.facebook.com/dev.namdev.9028/" target="_blank"><i class="fa fa-facebook"
-        style="font-size:20px;"></i></a> &ensp;
-    <a href="https://www.instagram.com/dev_namdev813/" target="_blank"><i class="fa fa-instagram"
-        style="font-size:20px;"></i></a> &ensp;
-    <a href="https://mobile.twitter.com/DevNamd12905361" target="_blank"><i class="fa fa-twitter"
-        style="font-size:20px;"></i></a>
+    <div>
+      <a href="http://web.whatsapp.com/send?phone=+919926040407&text=Hello" target="_blank"> <i
+          class='fa fa-whatsapp green-color' aria-hidden="true" style="font-size:20px;"></i></a>&ensp;
+      <a href="https://www.linkedin.com/in/dev-namdev-275536226/" target="_blank"><i class="fa fa-linkedin"
+          style="font-size:20px;"></i></a>&ensp;
+      <a href="https://github.com/devnamdev2003" target="_blank"><i class="fa fa-github" aria-hidden="true"
+          style="font-size:20px;"></i></a>&ensp;
+      <a href="https://www.facebook.com/dev.namdev.9028/" target="_blank"><i class="fa fa-facebook"
+          style="font-size:20px;"></i></a> &ensp;
+      <a href="https://www.instagram.com/dev_namdev813/" target="_blank"><i class="fa fa-instagram"
+          style="font-size:20px;"></i></a> &ensp;
+      <a href="https://mobile.twitter.com/DevNamd12905361" target="_blank"><i class="fa fa-twitter"
+          style="font-size:20px;"></i></a>
+    </div>
+    <br>
+    <div>
+      <span>Visitors count:</span>
+      <span class="website-counter"></span>
+      <!-- <button id="reset">reset</button> -->
+    </div>
+    <script>
+      var counterContainer = document.querySelector(".website-counter");
+      var resetButton = document.querySelector("#reset");
+      var visitCount = localStorage.getItem("page_view");
+
+      // Check if page_view entry is present
+      if (visitCount) {
+        visitCount = Number(visitCount) + 1;
+        localStorage.setItem("page_view", visitCount);
+      } else {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+      }
+      counterContainer.innerHTML = visitCount;
+
+      // Adding onClick event listener
+      resetButton.addEventListener("click", () => {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+        counterContainer.innerHTML = visitCount;
+      });
+    </script>
     <br>
     <br>
   </footer>
