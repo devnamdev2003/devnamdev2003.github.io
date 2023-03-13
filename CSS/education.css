@@ -1,0 +1,140 @@
+.education {
+      width: 90%;
+      padding: 2em 0em;
+      margin: 2em auto;
+      height: auto;
+      /* background: rgba(255, 255, 255, 0.607); */
+      background: rgb(228, 235, 245);
+
+      border-radius: 2em;
+      box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.196);
+      /* border: 2px solid rgb(255, 0, 0); */
+}
+
+
+.education h1 {
+      font-family: Cambria;
+      padding: .4em 0em;
+      font-size: 4.5rem;
+      z-index: 12;
+      text-align: center;
+      letter-spacing: .2rem;
+      transition: font-size .5s;
+
+      /* border: 1px solid rgb(5, 5, 5); */
+}
+
+
+.session {
+      /* border: 2px solid rgb(0, 0, 0); */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0em 3em;
+}
+
+.line_point {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      width: auto;
+      margin: 3.2em 2em 8.3em 0em;
+      background: linear-gradient(to top, rgba(0, 200, 255, 0.984) 30%, rgba(0, 115, 255, 0.779) 70%);
+      border-radius: 2em;
+      width: .5em;
+}
+
+.line_point div {
+      width: 1em;
+      height: 1em;
+      background: rgb(0, 0, 0);
+      border-radius: 3em;
+      z-index: 122;
+      transform: translate(-25%);
+}
+
+.line_point div.point2 {
+      width: 1em;
+      height: 1em;
+      margin-top: 2.3em;
+      background: rgb(0, 0, 0);
+      border-radius: 3em;
+      z-index: 122;
+}
+
+/* .session_inner {
+      border: 2px solid rgb(240, 5, 5);
+} */
+
+.session ul {
+      list-style-type: none;
+}
+
+.session h3 {
+      font-family: Cambria;
+      letter-spacing: .15rem;
+      line-height: 1.6em;
+      font-size: 2.5rem;
+}
+
+.session_inner p {
+      font-size: 1.4rem;
+      letter-spacing: .14rem;
+      line-height: 2.24rem;
+      font-weight: 400;
+}
+
+.grade {
+      /* border: 2px solid rgb(233, 19, 19); */
+      display: flex;
+      justify-content: space-between;
+}
+
+/* .session .grade p {
+      border: 1px solid #000;
+} */
+
+.year {
+      /* border: 1px solid #000; */
+      display: flex;
+      justify-content: space-between;
+}
+
+.grade img {
+      /* border: 1px solid #000; */
+      width: 2.56rem;
+      margin-right: 1em;
+}
+
+.xiith img, .xth img {
+      margin-right: 1.24em;
+
+}
+
+
+.graduation, .xiith, .xth {
+      /* border: 2px solid rgb(0, 0, 0); */
+      margin: 2em 0em;
+
+}
+
+@media (max-width:650px) {
+      .line_point {
+            display: none;
+      }
+
+      .education h1 {
+            font-size: 3.5rem;
+      }
+}
+
+@media (max-width:440px) {
+      .grade {
+            display: block;
+      }
+
+      .year {
+            justify-content: left;
+      }
+}

@@ -1,0 +1,96 @@
+.outer_skill {
+      width: 100%;
+      height: auto;
+}
+
+.skills {
+      width: 90%;
+      padding: 2em .7em;
+      margin: auto;
+      height: auto;
+      /* background: rgba(255, 255, 255, 0.607); */
+      background: rgb(228, 235, 245);
+      border-radius: 2em;
+      box-shadow: 0 0rem 2rem 0 rgba(0, 0, 0, 0.196);
+      /* border: 5px solid rgb(255, 0, 0); */
+}
+
+.skills h1 {
+      padding: .4em;
+      font-family: Cambria;
+      font-size: 4.5rem;
+      z-index: 12;
+      text-align: center;
+      letter-spacing: .2rem;
+      /* border: 1px solid rgb(5, 5, 5); */
+}
+
+.skill {
+      margin-bottom: 2em;
+      /* border: 1px solid #000; */
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+
+
+
+
+.skill .mongo {
+      background: linear-gradient(180deg, rgba(0, 200, 255, 0.211) 0%, rgba(0, 115, 255, 0.238) 100%);
+      border-radius: 1em;
+      width: 64px;
+      height: 64px;
+}
+
+.skill .django {
+      position: relative;
+      left: 22px;
+      top: 10.4px;
+      border-width: 2.5px;
+      border-style: solid;
+      border-image: linear-gradient(to top, #0072FF, #00C6FF) 1;
+      background: linear-gradient(to top, #00C6FF 30%, #0072FF 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1em;
+      font-weight: 900;
+      width: 49px;
+      height: 49px;
+      margin: 0em 0em 3em 0em;
+      padding: 1.5em 0em;
+      text-align: center;
+      display: inline-block;
+      /* border: 1px solid #000; */
+}
+
+.skill span.name {
+      /* border: 1px solid #000; */
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      font-size: 1.6rem;
+}
+
+.skill span.skill_span {
+      /* border: 1px solid #000; */
+      margin: 1.5em;
+      padding: .5em 0em;
+      border-radius: 1em;
+      transition: left .5s, opacity .5s;
+      opacity: 0;
+      width: 95px;
+      box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem white;
+      position: relative;
+}
+
+.skill img {
+      display: block;
+      /* border: 1px solid #000; */
+      width: 70px;
+      margin: auto;
+
+}
