@@ -16,12 +16,21 @@
       font-size: 62.5%;
 }
 
+a{
+      text-decoration: none;
+      color: #000;
+}
 div.main_code {
       background-image: url("../img/bg.jpeg");
       background-size: cover;
-      background-position: 30%;
-      /* background-position: top; */
+      background-position: top;
 
+}
+
+@media (max-width: 770px) {
+      div.main_code {
+            background-position: 30% 0%;
+      }
 }
 
 body {
@@ -138,6 +147,7 @@ a.link {
       /* background-image: url('../img/nav-bg3.svg'); */
       width: 100%;
       height: 80vh;
+      /* border: 2px solid black; */
       /* background-position: bottom;
       background-size: cover; */
       /* box-shadow: 0px 0px 20px 1000px rgb(255 252 252 / 51%) inset; */
@@ -148,6 +158,7 @@ a.link {
       margin: auto;
       height: 5rem;
       padding-top: .92em;
+      /* border: 2px solid rgb(190, 31, 31); */
 }
 
 .nav-bar::after {
@@ -160,6 +171,8 @@ a.link {
       width: 40%;
       height: 100%;
       float: left;
+      /* border: 2px solid rgb(50, 31, 190); */
+
 
 }
 
@@ -167,6 +180,8 @@ a.link {
       width: 60%;
       height: 100%;
       float: right;
+      /* border: 2px solid rgb(190, 31, 31); */
+
 
 }
 
@@ -178,12 +193,15 @@ a.link {
 .nav-items ul {
       width: 100%;
       height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 }
 
 .nav-items ul li {
-      width: 33.3333%;
+      width: auto;
       height: 100%;
-      float: left;
+      /* border: 2px solid black; */
 }
 
 .front ul li {
@@ -202,7 +220,7 @@ li a:hover {
       display: none;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 550px) {
 
       /* .front .nav-bar .nav-name {
             display: none;
@@ -281,7 +299,8 @@ li a:hover {
       box-shadow: 0px 0px 10px 0px rgba(84, 183, 225, 0.987);
 }
 
-.line1, .line3 {
+.line1,
+.line3 {
       transform-origin: 0%;
       transition: transform .3s ease-in-out;
 }
@@ -365,7 +384,8 @@ li a:hover {
       /* border: 1px solid #000; */
 }
 
-.greet h2, .greet h1 {
+.greet h2,
+.greet h1 {
       text-align: center;
       letter-spacing: .2rem;
 
@@ -562,10 +582,10 @@ div.copyright p {
 } */
 
 /* dark mode */
-.dark {
-      /* filter: invert(1); */
+/* .dark {
+      filter: invert(1);
 
-}
+} */
 
 #light {
       filter: invert(0);

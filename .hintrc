@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 14.8",
+    "not and_ff <= 109",
+    "not firefox <= 109",
+    "not opera <= 94",
+    "not and_ff <= 110",
+    "not firefox <= 111",
+    "not opera <= 95"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[allow]"
+        ]
+      }
+    ]
+  }
+}
