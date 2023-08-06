@@ -166,8 +166,8 @@
     height: 35%;
     border: none;
     font-size: 1.4rem;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
     border-radius: 12px;
     position: relative;
     cursor: pointer;

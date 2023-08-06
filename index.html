@@ -43,37 +43,38 @@
   <link rel="stylesheet" href="./CSS/certification.css" />
   <link rel="stylesheet" href="./CSS/education.css" />
   <link rel="stylesheet" href="./CSS/skill.css" />
+  <link rel="stylesheet" href="./CSS/contact.css" />
 
   <!-- js file -->
   <script src="./js/script.js" defer></script>
   <style>
-    /* div.front { 
-                  display: none;
-            }
+    /* div.front {
+      display: none;
+    }
 
-            div.about {
-                  display: none;
-            }
+    div.about {
+      display: none;
+    }
 
-            div.outer_skill {
-                  display: none;
-            }
+    div.outer_skill {
+      display: none;
+    }
 
-            div.education {
-                  display: none;
-            }
+    div.education {
+      display: none;
+    }
 
-            div.new_project {
-                  display: none;
-            }
+    div.new_project {
+      display: none;
+    }
 
-            div.certification {
-                  display: none;
-            }
+    div.certification {
+      display: none;
+    }
 
-           div.footer {
-                  display: none;
-            } */
+    div.footer {
+      display: none;
+    }*/
   </style>
 </head>
 
@@ -563,6 +564,31 @@
       </div>
       <button class="view_more" onclick="view()">view more</button>
     </div>
+
+    <div class="contact">
+      <div class="contact_inside">
+        <div class="contact_heading">
+          <h1>Contact</h1>
+        </div>
+        <form method="post" onsubmit="handleFormSubmit(event)">
+          <div class="name">
+            <label for="id_name">Name:</label>
+            <input type="text" id="id_name" name="name" maxlength="20" placeholder="Name" required>
+          </div>
+          <div class="email">
+            <label for="id_email">Email:</label>
+            <input type="email" id="id_email" name="email" maxlength="50" placeholder="Email" required>
+          </div>
+          <div class="message">
+            <label for="id_message">Message:</label>
+            <textarea id="id_message" name="message" rows="4" cols="50" maxlength="500" required></textarea>
+          </div>
+          <div class="submit_btn">
+            <button class="btn_pro github" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="footer">
       <div class="link_icon">
         <div>
@@ -620,6 +646,54 @@
   <div class="dark_btn">
     <img id="light_btn" src="https://img.icons8.com/nolan/64/00C6FF/0072FF/bright-moon.png" alt="moon_icon" />
   </div>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent the default form submission
+      alert('Thank you for your message! We will get back to you soon.')
+
+      // Get the form elements by their IDs
+      const nameInput = document.getElementById("id_name");
+      const emailInput = document.getElementById("id_email");
+      const messageInput = document.getElementById("id_message");
+
+      // Extract the values from the form elements
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const message = messageInput.value;
+
+
+      // Optionally, you can reset the form after handling the data
+      const endpoint = "https://contactapi-1uvn.onrender.com/";
+
+      const data = {
+        name: name,
+        email: email,
+        message: message,
+      };
+
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      };
+
+      // Sending the POST request
+      fetch(endpoint, requestOptions)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Response from the API:", data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+      event.target.reset();
+
+    }
+  </script>
+
 </body>
 
 </html>
