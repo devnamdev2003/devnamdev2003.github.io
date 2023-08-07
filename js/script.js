@@ -35,9 +35,9 @@ let iframe1 = document
   .getBoundingClientRect().bottom;
 iframe1 = iframe1 - w_height;
 
-// Get the bottom of the bounding rectangle for the .new_pro2_img div element and subtract the window height
+// Get the bottom of the bounding rectangle for the .new_pro2_img2 div element and subtract the window height
 let iframe2 = document
-  .querySelector(".new_pro2_img div")
+  .querySelector(".new_pro2_img2 div")
   .getBoundingClientRect().bottom;
 iframe2 = iframe2 - w_height;
 
@@ -46,6 +46,12 @@ let iframe3 = document
   .querySelector(".new_pro3_img div")
   .getBoundingClientRect().bottom;
 iframe3 = iframe3 - w_height;
+
+// Get the bottom of the bounding rectangle for the .new_pro3_img div element and subtract the window height
+let iframe4 = document
+  .querySelector(".new_pro4_img div")
+  .getBoundingClientRect().bottom;
+iframe4 = iframe4 - w_height;
 
 // This function is called on scroll
 function scrollFunction() {
@@ -88,11 +94,11 @@ function scrollFunction() {
     img.style.opacity = "0";
   }
   if (document.documentElement.scrollTop > iframe2 + 20) {
-    const img = document.querySelector(".new_pro2_img div");
+    const img = document.querySelector(".new_pro2_img2 div");
     img.style.left = "0%";
     img.style.opacity = "1";
   } else {
-    const img = document.querySelector(".new_pro2_img div");
+    const img = document.querySelector(".new_pro2_img2 div");
     img.style.left = "100%";
     img.style.opacity = "0";
   } if (document.documentElement.scrollTop > iframe3 + 20) {
@@ -102,6 +108,15 @@ function scrollFunction() {
   } else {
     const img = document.querySelector(".new_pro3_img div");
     img.style.left = "-100%";
+    img.style.opacity = "0";
+  }
+  if (document.documentElement.scrollTop > iframe4 + 20) {
+    const img = document.querySelector(".new_pro4_img div");
+    img.style.left = "0%";
+    img.style.opacity = "1";
+  } else {
+    const img = document.querySelector(".new_pro4_img div");
+    img.style.left = "100%";
     img.style.opacity = "0";
   }
 }
