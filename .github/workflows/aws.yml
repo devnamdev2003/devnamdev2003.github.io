@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/project/dev_portfolio
+            sudo cd /var/www/html/dev
             git pull origin main
             # Add any additional deployment commands here
