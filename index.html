@@ -1,1010 +1,1001 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00C6FF" />
+<html lang="en" class="scroll-smooth">
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Dev's Portfolio" />
-    <meta
-      name="description"
-      content="Welcome to my Portfolio. My name is dev namdev, and I am a Full stack web developer"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Namdev | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio of Dev Namdev, a System Engineer and Full Stack Developer specialized in Java, Spring Boot, Angular, and Microservices. Explore projects, skills, and professional experience.">
+    <meta name="keywords"
+        content="Dev Namdev, Software Developer, System Engineer, Java Developer, Spring Boot, Angular, Portfolio, Full Stack Web Developer, Tata Consultancy Services, Microservices">
+    <meta name="author" content="Dev Namdev">
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devnamdev2003.github.io/" />
-    <meta property="og:title" content="Dev's Portfolio" />
-    <meta
-      property="og:description"
-      content="Welcome to my Portfolio. My name is dev namdev, and I am a Full stack web developer"
-    />
-    <meta
-      property="og:image"
-      content="https://devnamdev2003.github.io/img/icon/meta_img.gif"
-    />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devnamdev2003.github.io/">
+    <meta property="og:title" content="Dev Namdev | System Engineer & Developer Portfolio">
+    <meta property="og:description"
+        content="Explore the portfolio of Dev Namdev, specializing in scalable microservices, Java, Spring Boot, and modern frontend development with Angular.">
+    <!-- Using one of your project images as a preview placeholder -->
+    <meta property="og:image"
+        content="https://devnamdev2003.github.io/img/icon/meta.png">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://devnamdev2003.github.io/" />
-    <meta property="twitter:title" content="Dev's Portfolio" />
-    <meta
-      property="twitter:description"
-      content="Welcome to my Portfolio. My name is dev namdev, and I am a Full stack web developer"
-    />
-    <meta
-      property="twitter:image"
-      content="https://devnamdev2003.github.io/img/icon/meta_img.gif"
-    />
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://devnamdev2003.github.io/">
+    <meta property="twitter:title" content="Dev Namdev | System Engineer & Developer Portfolio">
+    <meta property="twitter:description"
+        content="Explore the portfolio of Dev Namdev, specializing in scalable microservices, Java, Spring Boot, and modern frontend development with Angular.">
+    <meta property="twitter:image"
+        content="https://devnamdev2003.github.io/img/icon/meta.png">
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
 
-    <title>Dev | Portfolio</title>
 
-    <!-- css file -->
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/project.css" />
-    <link rel="stylesheet" href="./CSS/about.css" />
-    <link rel="stylesheet" href="./CSS/certification.css" />
-    <link rel="stylesheet" href="./CSS/education.css" />
-    <link rel="stylesheet" href="./CSS/skill.css" />
-    <link rel="stylesheet" href="./CSS/contact.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- js file -->
-    <script src="./js/script.js" defer></script>
-    <style>
-      /* div.front {
-      display: none;
-    }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    div.about {
-      display: none;
-    }
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    div.outer_skill {
-      display: none;  
-    }
-
-    div.education {
-      display: none;
-    }
-
-    div.new_project {
-      display: none;
-    }
-
-    div.certification {
-      display: none;
-    }
-
-    div.footer {
-      display: none;
-    }*/
-      #loader {
-        display: none;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="loader" id="loader">
-      <div class="inner one"></div>
-      <div class="inner two"></div>
-      <div class="inner three"></div>
-      <p>Loading..</p>
-    </div>
-    <div id="container">
-      <div class="main_code dark">
-        <div class="front">
-          <div class="nav-bar">
-            <div class="nav-name">
-              <h1 class="font-24px">Dev Namdev</h1>
-            </div>
-            <div class="nav-items">
-              <ul class="ul-items">
-                <li class="item font-16px">
-                  <a href="/" class="link">Home</a>
-                </li>
-                <li class="item font-16px">
-                  <a href="#project" class="link">Projects</a>
-                </li>
-                <li class="item font-16px">
-                  <a href="#about" class="link">About</a>
-                </li>
-                <li class="item font-16px">
-                  <a href="img/resume.png" class="link">Resume</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="greet">
-            <h2 class="font-28px">Hello.. I'am Dev</h2>
-            <h1 class="font-36px">I'am Software Engineer</h1>
-          </div>
-          <div class="new_nav">
-            <div class="outer">
-              <div class="box">
-                <div class="btn_cover">
-                  <div class="line line1"></div>
-                  <div class="line line2"></div>
-                  <div class="line line3"></div>
-                </div>
-                <ol>
-                  <li class="btn btn1 font-16px">
-                    <a href="#project" class="link">Project</a>
-                  </li>
-                  <li class="btn btn2 font-16px">
-                    <a href="#about" class="link">About</a>
-                  </li>
-                  <li class="btn btn3 font-16px">
-                    <a href="/img/resume.png" class="link">Resume</a>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <img
-            id="light"
-            class="html"
-            src="https://img.icons8.com/color/70/null/html-5--v1.png"
-            alt="html_icon"
-          />
-          <img
-            id="light"
-            class="css"
-            src="https://img.icons8.com/color/70/null/css3.png"
-            alt="css_icon"
-          />
-          <img
-            id="light"
-            class="js"
-            src="https://img.icons8.com/color/70/null/javascript.png"
-            alt="js_icon"
-          />
-        </div>
-        <div class="about" id="about">
-          <div class="about-content">
-            <h1 class="about_heading font-36px">About Me</h1>
-            <div class="about_des">
-              <div class="about_img">
-                <div class="img">
-                  <img id="light" src="./img/dev.jpeg" alt="" />
-                </div>
-              </div>
-              <div class="about_para">
-                <div>
-                  <p>
-                    Hello! I'm a skilled Python and C++ developer, with a
-                    passion for building powerful web applications. I specialize
-                    in backend development with Django and am also proficient in
-                    front-end technologies and DOM manipulation. With a strong
-                    background in logic building, I'm dedicated to delivering
-                    top-quality results and meeting project deadlines. Follow me
-                    for insights on web development and updates on my latest
-                    projects!
-                  </p>
-                  <p>Contact Me</p>
-                  <img src="./img/icon/mail.png" alt="" class="icon_mail" />
-                  <span class="mail">
-                    <span>
-                      <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhpXpgrMSbvLdFxptWXfXNwWtVGsGwnNrwTqsKMndhdDCBdWXVwGtNjZwnCfvpKwNvlgjt"
-                        class="link"
-                        >devnamdevcse@gmail.com
-                      </a>
-                    </span>
-                  </span>
-                  <br />
-                  <br />
-                  <img
-                    src="./img/icon/location.png"
-                    alt=""
-                    class="icon_location"
-                  />
-                  <span id="icon_location">
-                    <a
-                      href="https://www.google.co.in/maps/place/Shivpuri,+Madhya+Pradesh+473551/@25.4333819,77.629029,13z/data=!3m1!4b1!4m5!3m4!1s0x3970b95555322f1f:0x8d96b4e080b30b5c!8m2!3d25.4320478!4d77.6643815"
-                      class="link"
-                      >Shivpuri MP India
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="education">
-          <div class="new_pro_head">
-            <h1>Education</h1>
-          </div>
-          <div class="session">
-            <div class="line_point">
-              <div class="point1"></div>
-              <div class="point2"></div>
-              <div class="point3"></div>
-            </div>
-            <div class="session_inner">
-              <div class="graduation">
-                <div>
-                  <h3>Graduation</h3>
-                </div>
-                <p>University Institute of Technology, RGPV, Shivpuri</p>
-                <p>B-tech (Computer Science)</p>
-                <div class="grade">
-                  <p>CGPA: 8.80/10</p>
-                  <div class="year">
-                    <img src="./img/icon/year.png" alt="" class="year_icon" />
-                    <p>2020 - 2024</p>
-                  </div>
-                </div>
-              </div>
-              <div class="xiith">
-                <div>
-                  <h3>XIIth</h3>
-                </div>
-                <p>Government Higher Secondary Excellence School, Shivpuri</p>
-                <div class="grade">
-                  <p>Percentage: 94.4%</p>
-                  <div class="year">
-                    <img src="./img/icon/year.png" alt="" class="year_icon" />
-                    <p>2019 - 2020</p>
-                  </div>
-                </div>
-              </div>
-              <div class="xth">
-                <div>
-                  <h3>Xth</h3>
-                </div>
-                <p>Vinny Memorial Higher Secondary School, Shivpuri</p>
-                <div class="grade">
-                  <p>Percentage: 94.2%</p>
-                  <div class="year">
-                    <img src="./img/icon/year.png" alt="" class="year_icon" />
-                    <p>2017 - 2018</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="outer_skill">
-          <div class="skills">
-            <div class="skill_heading">
-              <h1>Skills</h1>
-            </div>
-            <div class="skill">
-              <span class="skill_span span1">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/c-plus-plus.png"
-                  alt="c++_icon"
-                />
-                <br />
-                <span class="name">C++</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/python.png"
-                  alt="python_icon"
-                />
-                <br />
-                <span class="name">Python</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/cs.png"
-                  alt="cs"
-                />
-                <br />
-                <span class="name">C#</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/html.png"
-                  alt="html_icon"
-                />
-                <br />
-                <span class="name">HTML</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/css-filetype.png"
-                  alt="css_icon"
-                />
-                <br />
-                <span class="name">CSS</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/js.png"
-                  alt="js_icon"
-                />
-                <br />
-                <span class="name">JS</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/php.png"
-                  alt="php_icon"
-                />
-                <br />
-                <span class="name">PHP</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/sql.png"
-                  alt="sql_icon"
-                />
-                <br />
-                <span class="name">SQL</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/linux--v2.png"
-                  alt="linux--v2"
-                />
-                <br />
-                <span class="name">Linux</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/git.png"
-                  alt="git_icon"
-                />
-                <br />
-                <span class="name">Git</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/api.png"
-                  alt="api"
-                />
-                <br />
-                <span class="name">API</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/mysql.png"
-                  alt="mysql"
-                />
-                <br />
-                <span class="name">MySQL</span>
-              </span>
-
-              <!-- <span class="skill_span">
-            <img class="mongo" src="./img/icon/ms+sql.png" alt="mssql_icon" />
-            <br />
-            <span class="name">MS SQL</span>
-          </span> -->
-              <!-- <span class="skill_span">
-            <img class="mongo" src="./img/icon/mongo.png" alt="mongodb_icon" />
-            <br />
-            <span class="name">Mongodb</span>
-          </span> -->
-              <span class="skill_span">
-                <p class="django">django</p>
-                <br />
-                <span class="name">Django</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/github.png"
-                  alt="github_icon"
-                />
-                <br />
-                <span class="name">Github</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/docker.png"
-                  alt="docker"
-                />
-                <br />
-                <span class="name">Docker</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/canva.png"
-                  alt="canva"
-                />
-                <br />
-                <span class="name">Canva</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/filmora.png"
-                  alt="filmora"
-                />
-                <br />
-                <span class="name">Filmora</span>
-              </span>
-              <span class="skill_span">
-                <img
-                  src="https://img.icons8.com/nolan/64/00C6FF/0072FF/adobe-premiere-pro.png"
-                  alt="Adobe_icon"
-                />
-                <br />
-                <span class="name">Adobe Pr</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="new_project" id="project">
-          <div class="new_pro_head">
-            <h1>Projects</h1>
-          </div>
-          <div class="new_projects">
-            <div class="new_pro1">
-              <div class="new_pro_img">
-                <div class="outer_iframe">
-                  <div
-                    class="iframe-embed-wrapper iframe-embed-responsive-16by9"
-                  >
-                    <iframe
-                      id="light"
-                      class="iframe-embed"
-                      title="youtube video"
-                      src="https://www.youtube.com/embed/_ziAOyhLPk0"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    >
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-              <div class="new_pro_des">
-                <div>
-                  <h3>
-                    Get results of all students using web scraping and
-                    automation
-                  </h3>
-                  <p>
-                    <span> Aim:</span> This project aims to get the result of
-                    all the students in one goes instead of getting them one by
-                    one. and also stores those marks in an excel file.
-                    <br />
-                    <br />
-                    <span> Technology used:</span> Python, Libraries (Selenium,
-                    Beautiful Soup, image, time, OS), Tesseract-OCR, WebDriver
-                    (chromedriver).
-                    <br />
-                    <br />
-                    <span> Deal with:</span> Captcha handling, File handling,
-                    Exception Handling, Web Scraping, and Web Automation.
-                  </p>
-                  <div class="pro_btn">
-                    <div class="btn_pro github">
-                      <a
-                        href="https://www.youtube.com/watch?v=_ziAOyhLPk0"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>view</span>
-                      </a>
-                    </div>
-                    <div class="btn_pro github">
-                      <a
-                        href="https://github.com/devnamdev2003/result_automation_system"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>github</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="new_pro2">
-              <div class="new_pro2_img new_pro4_img">
-                <div class="outer_iframe">
-                  <a href="https://ai-interview-assistant.onrender.com/">
-                    <img
-                      id="light"
-                      style="width: 100%; border: none"
-                      src="img/interviewmate.gif"
-                      alt="rgpv"
-                  /></a>
-                </div>
-              </div>
-              <div class="new_pro2_des">
-                <div>
-                  <h3>InterviewMate: AI-Powered Interview Assistant</h3>
-                  <p>
-                    <span> Aim:</span> InterviewMate aims to streamline the interview process by providing an AI-powered assistant for both candidates and interviewers, facilitating effective preparation, conduct, and analysis of interviews.
-                    <br />
-                    <br />
-                    <span> Technology used:</span> Python, Django, NLP.
-                    <br />
-                    <br />
-                    <span> Deal with:</span>  InterviewMate addresses the challenges of interview preparation, conduct, and analysis by providing tailored question generation, voice and video recording, real-time speech-to-text transcription, and comprehensive performance analysis capabilities.
-                  </p>
-                  <div class="pro_btn">
-                    <div class="btn_pro github">
-                      <a
-                        href="https://ai-interview-assistant.onrender.com/"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>view</span>
-                      </a>
-                    </div>
-                    <div class="btn_pro github">
-                      <a
-                        href="https://youtu.be/lUhxQ0-lR5E?si=t7Kx_xQJk2xqKFfM"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>YouTube</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="new_pro1">
-              <div class="new_pro_img new_pro3_img">
-                <div class="outer_iframe">
-                  <div id="light">
-                    <a href="https://rgpv-result.onrender.com/">
-                      <img style="width: 100%" src="img/rgpv.jpeg" alt="rgpv" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="new_pro_des">
-                <div>
-                  <h3>
-                    College Student Result Viewer with Server Communication
-                    using Python and Django
-                  </h3>
-                  <p>
-                    <span> Aim:</span> The College Student Result Viewer with
-                    Server Communication is a web application that enables
-                    students to check their academic performance by directly
-                    communicating with the college server using HTTP requests.
-                    The application is developed using Python and Django web
-                    development frameworks.
-                    <br />
-                    <br />
-                    <span> Technology used:</span> Python, Django, HTTP Request
-                    Library
-                    <br />
-                    <br />
-                    <span> Deal with:</span> I have integrated the HTTP request
-                    library, parsed the server's response, and used the Django
-                    web framework to create a cohesive application that
-                    retrieves and displays student results.
-                  </p>
-                  <div class="pro_btn">
-                    <div class="btn_pro github">
-                      <a
-                        href="https://rgpv-result.onrender.com/"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>view</span>
-                      </a>
-                    </div>
-                    <div class="btn_pro github">
-                      <a
-                        href="https://github.com/devnamdev2003/Rgpv_result_checker_application"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>github</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="new_pro2">
-              <div class="new_pro2_img new_pro2_img2">
-                <div class="outer_iframe">
-                  <div class="img">
-                    <div class="l_arrow">
-                      <p>
-                        <img
-                          src="https://img.icons8.com/nolan/50/00C6FF/0072FF/double-left.png"
-                          alt="left_icon"
-                        />
-                      </p>
-                    </div>
-                    <div class="r_arrow">
-                      <p>
-                        <img
-                          src="https://img.icons8.com/nolan/50/00C6FF/0072FF/double-right.png"
-                          alt="right_icon"
-                        />
-                      </p>
-                    </div>
-                    <div class="inner_img" id="light">
-                      <img src="./img/Pc/1.png" alt="" />
-                      <img src="./img/Pc/2.png" alt="" />
-                      <img src="./img/Pc/3.png" alt="" />
-                      <img src="./img/Pc/4.png" alt="" />
-                      <img src="./img/Pc/5.png" alt="" />
-                      <img src="./img/Pc/6.png" alt="" />
-                      <img src="./img/Pc/7.png" alt="" />
-                      <img src="./img/Pc/8.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="new_pro2_des">
-                <div>
-                  <h3>Personal computer Assistant</h3>
-                  <p>
-                    <span> Aim:</span> It is a general-purpose desktop-based
-                    application software, that understands voice commands and
-                    completes tasks or replies to queries said by the user.
-                    <br />
-                    <br />
-                    <span> Technology used:</span> Technology used: Python,
-                    Libraries (OS, pyttsx3, datetime, requests, webbrowser,
-                    AppOpener, BeautifulSoup, SpeechRecognition).
-                    <br />
-                    <br />
-                    <span> Deal with:</span> sending text messages and mail
-                    through voice command, File handling, general computer tasks
-                    like restarting, shutdown, locking, playing videos on
-                    YouTube, searching on Google, finding the temperature,
-                    opening any application, and many more features will be
-                    added.
-                  </p>
-                  <div class="pro_btn">
-                    <div class="btn_pro github">
-                      <a
-                        href="https://devnamdev2003.github.io/PC_Assistant/"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>view</span>
-                      </a>
-                    </div>
-                    <div class="btn_pro github">
-                      <a
-                        href="https://github.com/devnamdev2003/PC_Assistant"
-                        target="_blank"
-                        class="link"
-                        rel="noopener"
-                      >
-                        <span>Github</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="certification">
-          <div class="head">
-            <h1>Certification</h1>
-          </div>
-          <div class="certficate">
-            <div class="certify certificate1">
-              <img id="light" src="./img/certificate/c++.png" alt="" />
-              <div class="certificate_desc">
-                <a
-                  href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS42S3349029802069533"
-                  class="link"
-                >
-                  NPTEL Certified
-                </a>
-                <p>An Introduction to programing through C++</p>
-              </div>
-            </div>
-            <div class="certify certificate2">
-              <img id="light" src="./img/certificate/cs50.png" alt="" />
-              <div class="certificate_desc">
-                <a
-                  href="https://cs50.harvard.edu/certificates/18cd5833-1be8-4c90-9405-09578926666e"
-                  class="link"
-                >
-                  CS50’s
-                </a>
-                <p>Introduction to Programming with Python</p>
-              </div>
-            </div>
-            <div class="certify certificate3">
-              <img
-                id="light"
-                src="./img/certificate/nptel_database.jpg"
-                alt=""
-              />
-              <div class="certificate_desc">
-                <a
-                  href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS91S3362019810190161"
-                  class="link"
-                >
-                  NPTEL Certified
-                </a>
-                <p>NPTEL Certified: Data Base Management System</p>
-              </div>
-            </div>
-            <div class="certify certificate4 hidden">
-              <img id="light" src="./img/certificate/Hdlc.png" alt="" />
-              <div class="certificate_desc">
-                <a
-                  href="https://credsverse.com/credentials/e24c42dd-e8fd-4449-a93c-bace90efddc1"
-                  class="link"
-                >
-                  HDLC Technologies
-                </a>
-                <p>Data Science & Machine Learning</p>
-              </div>
-            </div>
-            <div class="certify certificate5 hidden">
-              <img id="light" src="./img/certificate/microsoft.png" alt="" />
-              <div class="certificate_desc">
-                <a
-                  href="https://www.credly.com/badges/01d51527-9ff3-4b6f-8a5b-ed0d18fa09bd?source=linked_in_profile"
-                  class="link"
-                >
-                  Microsoft Certified
-                </a>
-                <p>Security, Compliance, and Identity Fundamentals</p>
-              </div>
-            </div>
-            <div class="certify certificate6 hidden">
-              <img id="light" src="./img/certificate/cs50x.jpeg" alt="" />
-              <div class="certificate_desc">
-                <a
-                  href="https://cs50.harvard.edu/certificates/5e0319c6-3030-44ef-ad81-5ddfd1d0dd3b"
-                  class="link"
-                >
-                  CS50’s
-                </a>
-                <p>Introduction to Computer Science</p>
-              </div>
-            </div>
-          </div>
-          <button class="view_more" onclick="view()">view more</button>
-        </div>
-        <div class="contact">
-          <div class="contact_inside">
-            <div class="contact_heading">
-              <h1>Contact</h1>
-            </div>
-            <form method="post" onsubmit="handleFormSubmit(event)">
-              <div class="name">
-                <label for="id_name">Name:</label>
-                <input
-                  type="text"
-                  id="id_name"
-                  name="name"
-                  maxlength="20"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="email">
-                <label for="id_email">Email:</label>
-                <input
-                  type="email"
-                  id="id_email"
-                  name="email"
-                  maxlength="50"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="message">
-                <label for="id_message">Message:</label>
-                <textarea
-                  id="id_message"
-                  name="message"
-                  rows="4"
-                  cols="50"
-                  maxlength="500"
-                  required
-                ></textarea>
-              </div>
-              <div class="submit_btn">
-                <button class="btn_pro github" type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="footer">
-          <div class="link_icon">
-            <div>
-              <a
-                href="#"
-                class="link"
-              >
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/whatsapp.png"
-                  alt="whatsapp_icon"
-                />
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.linkedin.com/in/devnamdev/"
-                class="link"
-              >
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/linkedin.png"
-                  alt="linkedin_icon"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://github.com/devnamdev2003" class="link">
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/github.png"
-                  alt="github_icon"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.facebook.com/dev.namdev813/" class="link">
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/facebook.png"
-                  alt="facebook_icon"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/dev_namdev813/" class="link">
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/instagram-new.png"
-                  alt="instagram_icon"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://twitter.com/devnamdev813" class="link">
-                <img
-                  src="https://img.icons8.com/nolan/35/00C6FF/0072FF/twitterx.png"
-                  alt="twitter_icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="copyright">
-            <a href="https://devnamdev2003.github.io/LICENSE">
-              <p>Copyright © 2023 devnamdevcse</p>
-            </a>
-          </div>
-          <div>
-            <svg
-              class="waves"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28"
-              preserveAspectRatio="none"
-              shape-rendering="auto"
-            >
-              <defs>
-                <path
-                  id="gentle-wave"
-                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                />
-              </defs>
-              <g class="parallax">
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="0"
-                  fill="rgba(123, 207, 247, .7)"
-                />
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="3"
-                  fill="rgba(123, 207, 247, .5)"
-                />
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="5"
-                  fill="rgba(123, 207, 247, .3)"
-                />
-                <use
-                  xlink:href="#gentle-wave"
-                  x="48"
-                  y="7"
-                  fill="rgba(123, 207, 247)"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="dark_btn">
-        <img
-          id="light_btn"
-          src="https://img.icons8.com/nolan/64/00C6FF/0072FF/bright-moon.png"
-          alt="moon_icon"
-        />
-      </div>
-    </div>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script>
-      function handleFormSubmit(event) {
-        console.log("Mail Sending..");
-        event.preventDefault(); // Prevent the default form submission
-
-        // Get the form elements by their IDs
-        const loader = document.getElementById("loader");
-        const container = document.getElementById("container");
-        const nameInput = document.getElementById("id_name");
-        const emailInput = document.getElementById("id_email");
-        const messageInput = document.getElementById("id_message");
-        loader.style.display = "block";
-        container.style.display = "none";
-        // Extract the values from the form elements
-        const name = nameInput.value;
-        const email = emailInput.value;
-        const message = messageInput.value;
-
-        // Optionally, you can reset the form after handling the data
-        const endpoint = "https://contactapi-1uvn.onrender.com/";
-
-        const data = {
-          name: name,
-          email: email,
-          message: message,
-        };
-
-        const requestOptions = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        };
-
-        // Sending the POST request
-        fetch(endpoint, requestOptions)
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Response from the API:", data);
-            alert("Thank you for your message! We will get back to you soon.");
-            loader.style.display = "none";
-            container.style.display = "block";
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
-        event.target.reset();
-        console.log("Done!");
-      }
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                        dark: '#0f172a',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
     </script>
-  </body>
+
+    <style>
+        /* Global Overflow Fix for Mobile */
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .dark ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Blob Animation Background */
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: -1;
+            opacity: 0.4;
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(20px, -20px) scale(1.1);
+            }
+        }
+
+        /* Card Image Zoom Effect */
+        .project-card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        /* Nav Link Underline Animation */
+        .hover-underline-animation {
+            position: relative;
+        }
+
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300 font-sans selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav
+        class="fixed w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <span
+                        class="text-2xl font-bold tracking-tighter group-hover:text-primary transition-colors duration-300">DN<span
+                            class="text-primary group-hover:text-secondary">.</span></span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md font-medium hover-underline-animation">About</a>
+                        <a href="#experience"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md font-medium hover-underline-animation">Experience</a>
+                        <a href="#projects"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md font-medium hover-underline-animation">Projects</a>
+                        <a href="#skills"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md font-medium hover-underline-animation">Skills</a>
+                        <a href="#contact"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md font-medium hover-underline-animation">Contact</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-slate-800 transition-all duration-300 hover:rotate-12 focus:outline-none"
+                        aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon text-xl dark:hidden text-gray-700"></i>
+                        <i class="fas fa-sun text-xl hidden dark:block text-yellow-400"></i>
+                    </button>
+
+                    <!-- Hire Me Button (Desktop) -->
+                    <a href="#contact"
+                        class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-primary/30">
+                        Hire Me
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn"
+                        class="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none"
+                        aria-label="Open Menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary transition-colors">About</a>
+                <a href="#experience"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary transition-colors">Experience</a>
+                <a href="#projects"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary transition-colors">Projects</a>
+                <a href="#skills"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-primary transition-colors">Skills</a>
+                <a href="#contact"
+                    class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-primary font-bold">Contact
+                    Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+        <!-- Background Blobs -->
+        <div class="blob bg-blue-300 w-64 h-64 rounded-full top-20 left-10 dark:bg-blue-900 animate-float"></div>
+        <div
+            class="blob bg-purple-300 w-72 h-72 rounded-full bottom-20 right-10 dark:bg-purple-900 animation-delay-2000 animate-float-delayed">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="text-sm uppercase tracking-widest text-primary font-semibold mb-4 tracking-wider">System
+                    Engineer & Developer</h2>
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight hover:scale-[1.01] transition-transform duration-500 cursor-default">
+                    Hi, I'm <span class="text-gradient hover:text-blue-500 transition-colors">Dev Namdev</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Designing scalable microservices and building interactive frontend experiences. Specialized in Java,
+                    Spring Boot, and Angular.
+                </p>
+
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="https://github.com/devnamdev2003" target="_blank"
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-2xl text-gray-700 dark:text-gray-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/devnamdev/" target="_blank"
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-2xl text-blue-600">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:devnamdevcse@gmail.com"
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-2xl text-red-500">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="mt-12 animate-bounce">
+                    <a href="#experience" class="text-gray-400 hover:text-primary transition-colors cursor-pointer p-2">
+                        <i class="fas fa-chevron-down text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Professional <span
+                    class="text-primary">Experience</span></h2>
+
+            <div class="relative border-l-4 border-primary/30 ml-3 md:ml-6 space-y-12">
+
+                <!-- TCS -->
+                <div class="relative pl-8 md:pl-12 group" data-aos="fade-right">
+                    <!-- Timeline Dot with Animation -->
+                    <div
+                        class="absolute -left-[10px] md:-left-[14px] top-4 h-6 w-6 md:h-8 md:w-8 rounded-full bg-primary border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform duration-300 shadow-md">
+                    </div>
+
+                    <!-- Content Card with Hover Effect -->
+                    <div
+                        class="p-6 rounded-lg transition-all duration-300 hover:bg-gray-50 dark:hover:bg-slate-800/80 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-100 dark:hover:border-slate-700">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                            <h3
+                                class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                System Engineer</h3>
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-primary bg-blue-100 dark:bg-blue-900/30 rounded-full mt-2 sm:mt-0">Feb
+                                2025 – Present</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">Tata Consultancy
+                            Services | New Delhi</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                            <li>Designed and developed scalable RESTful microservices using Java and Spring Boot.</li>
+                            <li>Optimized PostgreSQL schemas and queries for performance and data integrity.</li>
+                            <li>Built custom Jasper Reports for dynamic business insights.</li>
+                            <li>Integrated Swagger/OpenAPI for API documentation, enhancing frontend-backend
+                                collaboration.</li>
+                            <li>Utilized Git and Maven for version control and CI/CD workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OmniXM -->
+                <div class="relative pl-8 md:pl-12 group" data-aos="fade-right" data-aos-delay="100">
+                    <div
+                        class="absolute -left-[10px] md:-left-[14px] top-4 h-6 w-6 md:h-8 md:w-8 rounded-full bg-secondary border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform duration-300 shadow-md">
+                    </div>
+
+                    <div
+                        class="p-6 rounded-lg transition-all duration-300 hover:bg-gray-50 dark:hover:bg-slate-800/80 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-100 dark:hover:border-slate-700">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                            <h3
+                                class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-secondary transition-colors">
+                                Software Developer</h3>
+                            <span
+                                class="inline-block px-3 py-1 text-sm font-semibold text-secondary bg-purple-100 dark:bg-purple-900/30 rounded-full mt-2 sm:mt-0">Jul
+                                2024 - Oct 2024</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-600 dark:text-gray-400 mb-4">OmniXM | Pune</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+                            <li>Worked on a Customer Experience Management (CXM) web app serving thousands of users.
+                            </li>
+                            <li>Developed frontend with Angular and backend with C# .NET.</li>
+                            <li>Resolved 20+ critical bugs, reducing customer-reported issues by 30%.</li>
+                            <li>Translated UI/UX designs into reusable Angular components.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-slate-800/50 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Featured <span
+                    class="text-secondary">Projects</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Angular Expense Tracker -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-primary/30"
+                    data-aos="fade-up">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://repository-images.githubusercontent.com/962758912/f3a5e886-2043-422b-81e9-a9d0cb097980"
+                            alt="Expense Tracker"
+                            class="card-img w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow relative">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Angular Expense
+                                Tracker</h3>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/devnamdev2003/angular-expense-tracker" target="_blank"
+                                    class="text-gray-500 hover:text-primary transition-colors" title="View Code"><i
+                                        class="fab fa-github text-xl"></i></a>
+                                <a href="https://exwise.vercel.app" target="_blank"
+                                    class="text-gray-500 hover:text-primary transition-colors" title="Live Demo"><i
+                                        class="fas fa-external-link-alt text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            A mobile-first expense tracking application with budgeting, filters, analytics, and
+                            calendar-based insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300 rounded border border-red-200 dark:border-red-800">Angular</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded border border-green-200 dark:border-green-800">Spring
+                                Boot</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded border border-blue-200 dark:border-blue-800">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rentify -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-secondary/30"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://repository-images.githubusercontent.com/805682747/b8af147c-1744-4b82-a183-16f2fd5816da"
+                            alt="Rentify" class="card-img w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-secondary transition-colors">Rentify - Rental
+                                Platform</h3>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/devnamdev2003/Rentify" target="_blank"
+                                    class="text-gray-500 hover:text-secondary transition-colors" title="View Code"><i
+                                        class="fab fa-github text-xl"></i></a>
+                                <a href="https://rentify-decode.onrender.com/" target="_blank"
+                                    class="text-gray-500 hover:text-secondary transition-colors" title="Live Demo"><i
+                                        class="fas fa-external-link-alt text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            A modern web platform that simplifies property rentals by connecting owners and tenants
+                            efficiently.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300 rounded border border-yellow-200 dark:border-yellow-800">Python</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded border border-green-200 dark:border-green-800">Django</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300 rounded border border-cyan-200 dark:border-cyan-800">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Django Chat App -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-purple-500/30"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://pdf813.netlify.app/chat/favicon_io/android-chrome-512x512.png"
+                            alt="Chat Application"
+                            class="card-img w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-purple-500 transition-colors">Real-time Chat
+                                App</h3>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/devnamdev2003/django-chat-app" target="_blank"
+                                    class="text-gray-500 hover:text-purple-500 transition-colors" title="View Code"><i
+                                        class="fab fa-github text-xl"></i></a>
+                                <a href="https://coders813-django-chat-application.hf.space" target="_blank"
+                                    class="text-gray-500 hover:text-purple-500 transition-colors" title="Live Demo"><i
+                                        class="fas fa-external-link-alt text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            A real-time chat application with authentication, WebSockets, and a clean, simple UI.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded border border-green-200 dark:border-green-800">Django</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 rounded border border-purple-200 dark:border-purple-800">WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Interview Assistant -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-pink-500/30"
+                    data-aos="fade-up">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://devnamdev2003.github.io/AI_Interview_Assistant/Frontend/img/share.png"
+                            alt="AI Interview Assistant"
+                            class="card-img w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-pink-500 transition-colors">AI Interview
+                                Assistant</h3>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/devnamdev2003/AI_Interview_Assistant" target="_blank"
+                                    class="text-gray-500 hover:text-pink-500 transition-colors" title="View Code"><i
+                                        class="fab fa-github text-xl"></i></a>
+                                <a href="https://devnamdev2003.github.io/AI_Interview_Assistant/Frontend/"
+                                    target="_blank" class="text-gray-500 hover:text-pink-500 transition-colors"
+                                    title="Live Demo"><i class="fas fa-external-link-alt text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            An AI-powered interview preparation assistant designed to help users practice and improve
+                            responses.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300 rounded border border-pink-200 dark:border-pink-800">AI
+                                / NLP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300 rounded border border-orange-200 dark:border-orange-800">Web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Automation -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-blue-500/30"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://repository-images.githubusercontent.com/622539801/29a04933-716a-47b2-8e1c-1162d58bc5be"
+                            alt="Result Automation"
+                            class="card-img w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-blue-500 transition-colors">Result Automation
+                            </h3>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/devnamdev2003/result_automation_system" target="_blank"
+                                    class="text-gray-500 hover:text-blue-500 transition-colors" title="View Code"><i
+                                        class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            An automation system that fetches student results efficiently using web scraping techniques.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded border border-blue-200 dark:border-blue-800">Python</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 rounded border border-gray-200 dark:border-gray-600">Web
+                                Scraping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MedVista (Freelance) -->
+                <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-teal-500/30"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="h-48 bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <i
+                            class="fas fa-hospital-user text-6xl text-white opacity-80 group-hover:scale-125 transition-transform duration-500 z-10"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold group-hover:text-teal-500 transition-colors">MedVista Platform
+                            </h3>
+                            <span
+                                class="text-xs bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 px-2 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Freelance</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">
+                            Backend system for hospital management. Developed 50+ RESTful APIs handling doctors,
+                            patients, and medical records.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-slate-800 rounded">Flask</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-slate-800 rounded">REST
+                                APIs</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-slate-800 rounded">Swagger</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Technical <span
+                    class="text-primary">Skills</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Programming -->
+                <div class="p-6 rounded-xl bg-gray-50 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 hover:border-primary/50 transition-all duration-300 hover:shadow-xl"
+                    data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fas fa-code text-primary"></i>
+                        Languages</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-java text-3xl text-orange-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-primary transition-colors">Java</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-python text-3xl text-yellow-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-primary transition-colors">Python</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-code text-3xl text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-primary transition-colors">C++</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-js text-3xl text-yellow-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-primary transition-colors">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="p-6 rounded-xl bg-gray-50 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 hover:border-secondary/50 transition-all duration-300 hover:shadow-xl"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i
+                            class="fas fa-server text-secondary"></i> Backend</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-leaf text-3xl text-green-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-secondary transition-colors">Spring
+                                Boot</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-pepper-hot text-3xl text-gray-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-secondary transition-colors">Flask</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-network-wired text-3xl text-indigo-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-secondary transition-colors">REST
+                                API</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-key text-3xl text-red-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-secondary transition-colors">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="p-6 rounded-xl bg-gray-50 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 hover:border-pink-500/50 transition-all duration-300 hover:shadow-xl"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i
+                            class="fas fa-laptop-code text-pink-500"></i> Frontend</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-angular text-3xl text-red-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-pink-500 transition-colors">Angular</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-html5 text-3xl text-orange-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-pink-500 transition-colors">HTML5</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-css3-alt text-3xl text-blue-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-pink-500 transition-colors">CSS3</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-css3 text-3xl text-cyan-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span
+                                class="text-sm font-medium group-hover:text-pink-500 transition-colors">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DB -->
+                <div class="p-6 rounded-xl bg-gray-50 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 hover:border-green-500/50 transition-all duration-300 hover:shadow-xl"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i
+                            class="fas fa-database text-green-500"></i> Tools & DB</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-database text-3xl text-blue-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-green-500 transition-colors">MySQL</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fas fa-server text-3xl text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span
+                                class="text-sm font-medium group-hover:text-green-500 transition-colors">PostgreSQL</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-git-alt text-3xl text-red-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-green-500 transition-colors">Git</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center p-3 bg-white dark:bg-slate-700 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group cursor-default">
+                            <i
+                                class="fab fa-docker text-3xl text-blue-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <span class="text-sm font-medium group-hover:text-green-500 transition-colors">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements -->
+    <section class="py-20 bg-gray-50 dark:bg-slate-800/50 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <!-- Education -->
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <i class="fas fa-graduation-cap text-primary"></i> Education
+                    </h2>
+                    <div class="space-y-6">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow duration-300 hover:bg-gray-50 dark:hover:bg-slate-800">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold">B-Tech (Computer Science)</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">UIT, RGPV, Shivpuri</p>
+                                </div>
+                                <span class="text-sm font-semibold bg-primary/10 text-primary px-2 py-1 rounded">8.62
+                                    CGPA</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">Oct 2020 - Jun 2024</p>
+                        </div>
+
+                        <div
+                            class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md border-l-4 border-gray-300 dark:border-gray-700 hover:shadow-lg transition-shadow duration-300 hover:bg-gray-50 dark:hover:bg-slate-800">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-xl font-bold">Class XII (Maths)</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Govt. Higher Secondary Excellence School
+                                    </p>
+                                </div>
+                                <span
+                                    class="text-sm font-semibold bg-gray-100 dark:bg-slate-800 px-2 py-1 rounded">94.4%</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">2019 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <i class="fas fa-trophy text-yellow-500"></i> Achievements
+                    </h2>
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-x-[-10px] cursor-default">
+                            <div
+                                class="h-10 w-10 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center text-yellow-600 text-lg">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Qualified GATE 2024</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Secured All India Rank under 10,000
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-x-[-10px] cursor-default">
+                            <div
+                                class="h-10 w-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 text-lg">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">2nd Rank in Dev Scripter 2024</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Organized by GeeksforGeeks</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-x-[-10px] cursor-default">
+                            <div
+                                class="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 text-lg">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">NPTEL Silver Medalist</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Database Management Systems (IIT
+                                    Kanpur)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-x-[-10px] cursor-default">
+                            <div
+                                class="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 text-lg">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">NPTEL Silver Medalist</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Introduction to Programming in C++
+                                    (IIT Bombay)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center" data-aos="fade-up">Get In <span
+                    class="text-primary">Touch</span></h2>
+            <div class="bg-gray-50 dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                data-aos="fade-up">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name"
+                            class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                        <input type="text" id="name" required
+                            class="mt-1 block w-full rounded-md border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-slate-800 dark:text-white sm:text-sm p-3 border transition-all duration-300 focus:scale-[1.01]">
+                    </div>
+                    <div>
+                        <label for="email"
+                            class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" required
+                            class="mt-1 block w-full rounded-md border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-slate-800 dark:text-white sm:text-sm p-3 border transition-all duration-300 focus:scale-[1.01]">
+                    </div>
+                    <div>
+                        <label for="message"
+                            class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea id="message" rows="4" required
+                            class="mt-1 block w-full rounded-md border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-slate-800 dark:text-white sm:text-sm p-3 border transition-all duration-300 focus:scale-[1.01]"></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                        Send Message
+                    </button>
+                    <p id="form-status" class="text-center text-sm hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-lg mx-auto">Currently open for new opportunities.
+                Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://github.com/devnamdev2003"
+                    class="text-gray-400 hover:text-primary transition-all duration-300 text-xl transform hover:scale-125"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devnamdev/"
+                    class="text-gray-400 hover:text-blue-600 transition-all duration-300 text-xl transform hover:scale-125"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"
+                    class="text-gray-400 hover:text-pink-600 transition-all duration-300 text-xl transform hover:scale-125"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="text-sm text-gray-500 dark:text-gray-600">
+                &copy; 2025 Dev Namdev. All rights reserved. <br>
+                Built with HTML, Tailwind CSS & Magic.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- AOS Animation Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+
+    <!-- Mobile Menu, Theme Logic & Contact Form -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const htmlElement = document.documentElement;
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close Mobile Menu on Link Click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Theme Toggle
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // Contact Form Logic
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            const name = nameInput.value;
+            const email = emailInput.value;
+            const message = messageInput.value;
+
+            // Loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            formStatus.classList.add('hidden');
+
+            const endpoint = "https://contactapi-1uvn.onrender.com/";
+            const data = {
+                name: name,
+                email: email,
+                message: message,
+            };
+
+            const requestOptions = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            };
+
+            try {
+                const response = await fetch(endpoint, requestOptions);
+                if (response.ok) {
+                    formStatus.textContent = "Message sent successfully! I'll get back to you soon.";
+                    formStatus.className = "text-center text-sm text-green-600 mt-2 font-bold";
+                    contactForm.reset();
+                } else {
+                    throw new Error('Server responded with error');
+                }
+            } catch (error) {
+                console.error("Error sending message:", error);
+                formStatus.textContent = "Failed to send message. Please try again later.";
+                formStatus.className = "text-center text-sm text-red-600 mt-2 font-bold";
+            } finally {
+                formStatus.classList.remove('hidden');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
+        });
+    </script>
+
+    <!-- Add Custom CSS for Skill Tags to keep HTML clean -->
+    <style>
+        .skill-tag {
+            @apply px-3 py-1 text-sm font-medium bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-200 rounded-md border border-gray-200 dark:border-slate-600 hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors cursor-default;
+        }
+    </style>
+</body>
+
 </html>
