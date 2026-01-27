@@ -447,11 +447,26 @@
                 <!-- Django Chat App -->
                 <div class="project-card group bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-slate-700 flex flex-col h-full hover:border-purple-500/30"
                     data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://pdf813.netlify.app/chat/favicon_io/android-chrome-512x512.png"
-                            alt="Chat Application"
-                            class="card-img w-full h-full object-cover transition-transform duration-700">
+                    <!-- Designed Thumbnail Composition -->
+                    <div
+                        class="h-48 overflow-hidden relative flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900">
+                        <!-- Abstract Background Decoration -->
+                        <div class="absolute inset-0 opacity-40">
+                            <div
+                                class="absolute top-[-20%] left-[-20%] w-40 h-40 bg-purple-500 rounded-full blur-3xl animate-pulse">
+                            </div>
+                            <div class="absolute bottom-[-20%] right-[-20%] w-40 h-40 bg-blue-500 rounded-full blur-3xl animate-pulse"
+                                style="animation-delay: 1s;"></div>
+                        </div>
+
+                        <!-- Your Logo (Centered & Styled) -->
+                        <div
+                            class="relative z-10 p-2 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transform group-hover:scale-110 transition-transform duration-500">
+                            <img src="https://pdf813.netlify.app/chat/favicon_io/android-chrome-512x512.png"
+                                alt="Chat Application Logo" class="w-20 h-20 object-contain drop-shadow-lg">
+                        </div>
                     </div>
+
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold group-hover:text-purple-500 transition-colors">Real-time Chat
