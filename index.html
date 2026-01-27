@@ -21,8 +21,7 @@
     <meta property="og:description"
         content="Explore the portfolio of Dev Namdev, specializing in scalable microservices, Java, Spring Boot, and modern frontend development with Angular.">
     <!-- Using one of your project images as a preview placeholder -->
-    <meta property="og:image"
-        content="https://devnamdev2003.github.io/img/icon/meta.png">
+    <meta property="og:image" content="https://devnamdev2003.github.io/img/icon/meta.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -30,8 +29,7 @@
     <meta property="twitter:title" content="Dev Namdev | System Engineer & Developer Portfolio">
     <meta property="twitter:description"
         content="Explore the portfolio of Dev Namdev, specializing in scalable microservices, Java, Spring Boot, and modern frontend development with Angular.">
-    <meta property="twitter:image"
-        content="https://devnamdev2003.github.io/img/icon/meta.png">
+    <meta property="twitter:image" content="https://devnamdev2003.github.io/img/icon/meta.png">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png" />
@@ -984,20 +982,16 @@
         const mobileLinks = document.querySelectorAll('.mobile-link');
         const htmlElement = document.documentElement;
 
-        // Mobile Menu Toggle
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close Mobile Menu on Link Click
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Theme Toggle
-        // Check local storage or system preference
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             htmlElement.classList.add('dark');
         } else {
@@ -1030,35 +1024,26 @@
             const email = emailInput.value;
             const message = messageInput.value;
 
-            // Loading state
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
             formStatus.classList.add('hidden');
 
-            const endpoint = "https://contactapi-1uvn.onrender.com/";
-            const data = {
-                name: name,
-                email: email,
-                message: message,
-            };
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwMGNLtKK31_pO8TL3PSo-2JXWUX2s2Ag1xyhWE71Xh-k-UB1sWCB1Cn6ZNaIue2Gf0jw/exec';
 
-            const requestOptions = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            };
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('message', message);
 
             try {
-                const response = await fetch(endpoint, requestOptions);
-                if (response.ok) {
-                    formStatus.textContent = "Message sent successfully! I'll get back to you soon.";
-                    formStatus.className = "text-center text-sm text-green-600 mt-2 font-bold";
-                    contactForm.reset();
-                } else {
-                    throw new Error('Server responded with error');
-                }
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    body: formData
+                });
+                formStatus.textContent = "Message sent successfully! I'll get back to you soon.";
+                formStatus.className = "text-center text-sm text-green-600 mt-2 font-bold";
+                contactForm.reset();
+
             } catch (error) {
                 console.error("Error sending message:", error);
                 formStatus.textContent = "Failed to send message. Please try again later.";
